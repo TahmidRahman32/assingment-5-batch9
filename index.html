@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="./images/bus-icon.png" type="image/x-icon" />
+      <link rel="stylesheet" href="style/index.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <title>P-Ticket</title>
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  colors: {
+                     pryColor: "#1DD100",
+                  },
+                  backgroundImage: {
+                     "banner-img": "url('./images/banner.png')",
+                  },
+               },
+            },
+         };
+      </script>
+   </head>
+   <body class="md:max-w-7xl mx-auto md:my-8 border p-1">
+      <header>
+         <div class="navbar bg-base-100">
+            <div class="navbar-start">
+               <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                     <li><a>Home</a></li>
+                     <li>
+                        <a>About</a>
+                     </li>
+                     <li><a>Destination</a></li>
+                     <li><a>Search</a></li>
+                  </ul>
+               </div>
+               <a class="text-3xl font-bold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+               <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li>
+                     <a>About</a>
+                  </li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+               </ul>
+            </div>
+            <div class="navbar-end">
+               <a class="btn text-pryColor">Bus <img src="images/bus-icon.png" alt="" /></a>
+            </div>
+         </div>
+      </header>
+      <main>
+         <!-- banner style -->
+         <div>
+            <section class="bg-banner-img bg-no-repeat bg-cover md:h-[600px] bg-center text-center md:pt-36 pt-16">
+               <h1 class="md:text-5xl text-3xl text-white font-bold">
+                  End-to-End Travel with <br />
+                  <span class="text-pryColor">P Paribahan</span>
+               </h1>
+               <p class="text-white my-4 md:px-72">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+               <button class="bg-pryColor btn border-0 font-bold">Buy Tickets</button>
+            </section>
+            <section class="relative flex justify-center">
+               <div class="md:flex flex-grow md:px-16 gap-8 md:absolute md:-bottom-10">
+                  <div class="md:px-5 bg-slate-50 py-6 flex items-center gap-2 rounded-xl shadow-lg shadow-[#1DD100]/0 border-b-2 border-pryColor">
+                     <div><img class="md:w-10" src="/images/people.png" alt="" /></div>
+                     <div>
+                        <h2 class="text-2xl font-bold">500K+</h2>
+                        <p>Registered users</p>
+                     </div>
+                  </div>
+                  <div class="px-5 bg-slate-50 py-6 flex items-center gap-2 rounded-xl shadow-lg shadow-[#1DD100]/0 border-b-2 border-pryColor">
+                     <div><img class="w-10" src="/images/ticket-cupon.png" alt="" /></div>
+                     <div>
+                        <h2 class="text-2xl font-bold">1.7 lacks</h2>
+                        <p>Tickets sold</p>
+                     </div>
+                  </div>
+                  <div class="px-5 bg-slate-50 py-6 flex items-center gap-2 rounded-xl shadow-lg shadow-[#1DD100]/0 border-b-2 border-pryColor">
+                     <div><img class="w-10" src="/images/stoppage.png" alt="" /></div>
+                     <div>
+                        <h2 class="text-2xl font-bold">80K+</h2>
+                        <p>Rental partners</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <!-- offer coupon -->
+         <section class="md:mt-28 mt-16">
+            <div class="text-center">
+               <h2 class="text-3xl font-bold">Best offers for you</h2>
+            </div>
+            <div class="md:flex justify-center md:gap-7 mt-16">
+               <div class="bg-[#FFBF0F] pl-12 flex justify-around items-center rounded-xl">
+                  <div>
+                     <h2 class="text-2xl font-bold inter">15% OFF</h2>
+                     <p class="font-bold">on your next purchase</p>
+                     <p><small> use by January 2024</small></p>
+                  </div>
+                  <img class="w-7" src="./images/cupon-devider.png" alt="" />
+                  <div class="flex justify-center">
+                     <div class="ml-8 pr-4">
+                        <h2 class="text-2xl font-bold raleway">NEW15</h2>
+                        <p>Coupon Code</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="bg-[#F78C9C] pl-12 flex justify-around md:mt-0 mt-4 items-center rounded-xl">
+                  <div>
+                     <h2 class="text-2xl font-bold inter">20% OFF</h2>
+                     <p class="font-bold">on your next purchase</p>
+                     <p><small> use by January 2024</small></p>
+                  </div>
+                  <img class="w-7" src="./images/cupon-devider.png" alt="" />
+                  <div class="flex justify-center">
+                     <div class="ml-5 pr-4">
+                        <h2 class="text-2xl font-bold raleway">Couple 20</h2>
+                        <p>Coupon Code</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="text-center mt-8">
+               <button class="border border-pryColor px-4 py-1 text-xl text-pryColor rounded-lg">See All Offers</button>
+            </div>
+         </section>
+         <section class="bg-[#F7F8F8] md:py-10 py-3 my-8 rounded-xl">
+            <div class="text-center mt-16">
+               <h1 class="text-3xl font-bold raleway my-3">P.H Paribahan</h1>
+               <p class="md:px-80">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+            <div class="px-8 my-8">
+               <div class="bg-[#FFFFFF] flex rounded-2xl">
+                  <div class="flex justify-between border">
+                     <div class="flex gap-3 border px-3 py-3">
+                        <div>
+                           <img src="./images/bus-logo.png" alt="" />
+                        </div>
+                        <div class="">
+                           <h1 class="text-2xl font-bold ">Greenline Paribahan</h1>
+                           <p>Coach-009-WEB ! AC_Business</p>
+                        </div>
+                     </div>
+                     <div class="flex py-1 px-3 bg-[#1DD10026] ">
+                        <div>
+                           <img src="./images/seat-green.png" alt="" />
+                        </div>
+                        <h5 class="font-bold"><span>40</span>Seats left</h5>
+                     </div>
+                  </div>
+                  <div>
+                     <img class="" src="./images/info-devider.png" alt="" />
+                  </div>
+                  <div class="flex justify-center">
+                     <div class="ml-8 pr-4">
+                        <h2 class="text-2xl font-bold raleway">NEW15</h2>
+                        <p>Coupon Code</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer></footer>
+   </body>
+</html>
