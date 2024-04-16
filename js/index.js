@@ -38,25 +38,18 @@ for (const seat of seatAll) {
          const grandTotal = stringInt("grand-total");
          const allTotalAndGrandTotal = ticketPrice + grandTotal;
          displayElement("grand-total", allTotalAndGrandTotal);
-         
 
          const nextBtn = document.getElementById("next-btn");
-         const phone = document.getElementById('phone-num').value;
-         // console.log(phone);
-         // console.log(nextBtn,seat);
-         if(seat && phone ){
+         const phone = document.getElementById("phone-num").value;
+
+         if (phone || seat) {
             nextBtn.removeAttribute("disabled");
          }
 
          return;
-      } 
-      else {
-         alert();
+      } else {
+         alert("your 4 seat is available");
          return;
       }
-
-      //  const parTicket = document.getElementById();
-      //  const ticketPrice = parTicket.innerText
-      // console.log(ticketPrice);
    });
 }

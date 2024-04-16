@@ -61,7 +61,7 @@
       <main>
          <!-- banner style -->
          <div>
-            <section class="bg-banner-img bg-no-repeat bg-cover md:h-[600px] bg-center text-center md:pt-36 pt-16">
+            <section id="banner" class="bg-banner-img bg-no-repeat bg-cover md:h-[600px] bg-center text-center md:pt-36 pt-16">
                <h1 class="md:text-5xl text-3xl text-white font-bold">
                   End-to-End Travel with <br />
                   <span class="text-pryColor">P Paribahan</span>
@@ -284,7 +284,6 @@
                   <div class="bg-[#F7F8F8] px-8 rounded-xl pb-3">
                      <div class="overflow-x-auto">
                         <table class="table">
-                           <!-- head -->
                            <thead>
                               <tr>
                                  <th>Seat <span id="seat" class="bg-pryColor text-white px-2 rounded-2xl">0</span></th>
@@ -292,9 +291,7 @@
                                  <th>Price</th>
                               </tr>
                            </thead>
-                           <tbody id="ticket-element">
-                              <!-- row 3 -->
-                           </tbody>
+                           <tbody id="ticket-element"></tbody>
                         </table>
                      </div>
                      <hr />
@@ -341,8 +338,7 @@
                                  <div class="form-control mt-6" onclick="my_modal_5.showModal()">
                                     <input id="next-btn" class="btn bg-pryColor text-white text-xl" type="button" value="Next" disabled />
                                  </div>
-                                 <!-- Open the modal using ID.showModal() method -->
-                                 <!-- <button class="btn" >open modal</button> -->
+
                                  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                                     <div class="modal-box flex-col justify-center">
                                        <img class="mx-auto" src="./images/success.png" alt="" />
@@ -351,9 +347,7 @@
                                        <p class="text-center">Shortly you will find a confirmation in your email.</p>
                                        <div class="modal-action">
                                           <form method="dialog">
-                                             <!-- if there is a button in form, it will close the modal -->
-
-                                             <button class="btn">Close</button>
+                                             <button class="btn"><a href="#banner">Close</a></button>
                                           </form>
                                        </div>
                                     </div>
